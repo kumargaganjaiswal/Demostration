@@ -30,11 +30,12 @@
         {
             this.btnClick = new System.Windows.Forms.Button();
             this.txtMsg = new System.Windows.Forms.TextBox();
+            this.lbltext = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClick
             // 
-            this.btnClick.Location = new System.Drawing.Point(105, 108);
+            this.btnClick.Location = new System.Drawing.Point(96, 76);
             this.btnClick.Name = "btnClick";
             this.btnClick.Size = new System.Drawing.Size(75, 23);
             this.btnClick.TabIndex = 0;
@@ -49,11 +50,21 @@
             this.txtMsg.Size = new System.Drawing.Size(100, 20);
             this.txtMsg.TabIndex = 1;
             // 
+            // lbltext
+            // 
+            this.lbltext.AutoSize = true;
+            this.lbltext.Location = new System.Drawing.Point(96, 140);
+            this.lbltext.Name = "lbltext";
+            this.lbltext.Size = new System.Drawing.Size(25, 13);
+            this.lbltext.TabIndex = 2;
+            this.lbltext.Text = "......";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(287, 261);
+            this.Controls.Add(this.lbltext);
             this.Controls.Add(this.txtMsg);
             this.Controls.Add(this.btnClick);
             this.Name = "Form1";
@@ -67,6 +78,7 @@
 
         private System.Windows.Forms.Button btnClick;
         private System.Windows.Forms.TextBox txtMsg;
+        private System.Windows.Forms.Label lbltext;
     }
 }
 
