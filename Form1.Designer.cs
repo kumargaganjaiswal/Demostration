@@ -28,34 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClick = new System.Windows.Forms.Button();
+            this.txtMsg = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnClick
             // 
-            this.button1.Location = new System.Drawing.Point(105, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClick.Location = new System.Drawing.Point(105, 108);
+            this.btnClick.Name = "btnClick";
+            this.btnClick.Size = new System.Drawing.Size(75, 23);
+            this.btnClick.TabIndex = 0;
+            this.btnClick.Text = "Click Me";
+            this.btnClick.UseVisualStyleBackColor = true;
+            this.btnClick.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtMsg
+            // 
+            this.txtMsg.Location = new System.Drawing.Point(87, 39);
+            this.txtMsg.Name = "txtMsg";
+            this.txtMsg.Size = new System.Drawing.Size(100, 20);
+            this.txtMsg.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(287, 261);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtMsg);
+            this.Controls.Add(this.btnClick);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClick;
+        private System.Windows.Forms.TextBox txtMsg;
     }
 }
 
