@@ -19,7 +19,7 @@ namespace ApplicationMaster
 
         private void button1_Click(object sender, EventArgs e)
         {
-           lbltext.Text=txtMsg.Text;
+            lbltext.Text = "Hi.." + txtMsg.Text + ", your Age is " + txtAge.Text+".";
         }
     }
 }
